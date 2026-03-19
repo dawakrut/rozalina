@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акватерапия RitmStyle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- ШАПКА -->
+        <header class="header">
+            <div class="container header__container">
+                <a href="index.html" class="logo">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 5L55 20V40L30 55L5 40V20L30 5Z" stroke="#018ABE" stroke-width="2"/>
+                        <path d="M30 15L45 25V35L30 45L15 35V25L30 15Z" stroke="#018ABE" stroke-width="2"/>
+                    </svg>
+                    <span>Ritm</span>Style
+                </a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link active">Главная</a></li>
+                        <li class="nav__item"><a href="#sessions" class="nav__link">Сеансы</a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">О RitmStyle</a></li>
+                        <li class="nav__item"><a href="#prices" class="nav__link">Стоимость</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="btn btn--primary" id="openModalBtn">Записаться</button>
+            </div>
+        </header>
+
+        <main>
+            <!-- ГЛАВНЫЙ ЭКРАН -->
+            <section class="hero">
+                <div class="container hero__container">
+                    <p class="hero__subtitle">Акватерапия</p>
+                    <h1 class="hero__title">RitmStyle</h1>
+                </div>
+                <div class="hero__wave">
+                    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L60 10C120 20 240 40 360 45C480 50 600 40 720 30C840 20 960 10 1080 15C1200 20 1320 40 1380 50L1440 60V120H1380H1320H1200H1080H960H840H720H600H480H360H240H120H60H0V0Z" fill="#162831"/>
+                    </svg>
+                </div>
+            </section>
+
+            <!-- СЕАНСЫ -->
+<section id="sessions" class="sessions">
+    <div class="container">
+        <h2 class="section-title">Сеансы RitmStyle</h2>
+        <div class="sessions__grid">
+            <div class="sessions__main">
+                <div class="session-card session-card--large" data-session="RitmStyle для пар">
+                    <img src="images/session-large.jpg" alt="RitmStyle для пар" class="session-card__image">
+                    <div class="session-card__content">
+                        <h3>RitmStyle для пар</h3>
+                        <p>RitmStyle с полным погружением под воду</p>
+                        <button class="btn btn--small btn--session">Записаться</button>
+                    </div>
+                </div>
+            </div>
+            <div class="sessions__side">
+                <div class="session-card" data-session="RitmStyle с фотосессией">
+                    <img src="images/session-1.jpg" alt="RitmStyle с фотосессией" class="session-card__image">
+                    <div class="session-card__content">
+                        <h3>RitmStyle с фотосессией</h3>
+                        <p>RitmStyle + красивый подводный фотосессия</p>
+                        <button class="btn btn--small btn--session">Записаться</button>
+                    </div>
+                </div>
+                <div class="session-card" data-session="Стандартный RitmStyle">
+                    <img src="images/session-5.jpg" alt="Стандартный RitmStyle" class="session-card__image">
+                    <div class="session-card__content">
+                        <h3>Стандартный RitmStyle</h3>
+                        <p>RitmStyle для беременных</p>
+                        <button class="btn btn--small btn--session">Записаться</button>
+                    </div>
+                </div>
+                <div class="session-card" data-session="Курс Иванов">
+                    <img src="images/session-3.jpg" alt="Курс Иванов" class="session-card__image">
+                    <div class="session-card__content">
+                        <h3>Курс Иванов</h3>
+                        <p>Полный курс для достижения целей</p>
+                        <button class="btn btn--small btn--session">Записаться</button>
+                    </div>
+                </div>
+                <div class="session-card" data-session="Индивидуальный подход">
+                    <img src="images/session-4.jpg" alt="Индивидуальный подход" class="session-card__image">
+                    <div class="session-card__content">
+                        <h3>Индивидуальный подход</h3>
+                        <p>Персональные программы</p>
+                        <button class="btn btn--small btn--session">Записаться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КУРС ИВАНОВ (ПОДРОБНО) -->
+<section class="course-detail">
+    <div class="container">
+        <div class="course-detail__content">
+            <h2 class="section-title">Курс Иванов</h2>
+            <p class="course-detail__intro">Курс Иванов для всех, кто хочет стать лучшим в мире. Он включает все необходимые знания и навыки, чтобы помочь вам достичь своих целей.</p>
+            <div class="course-detail__grid">
+                <div class="course-item" data-course="Планирование">
+                    <div class="course-item__number">01</div>
+                    <h3>Планирование</h3>
+                    <p>Как создать свой план действий</p>
+                    <button class="btn btn--small btn--course">Подробнее</button>
+                </div>
+                <div class="course-item" data-course="Инструкция">
+                    <div class="course-item__number">02</div>
+                    <h3>Инструкция</h3>
+                    <p>Как использовать инструменты и материалы</p>
+                    <button class="btn btn--small btn--course">Подробнее</button>
+                </div>
+                <div class="course-item" data-course="Оценка результатов">
+                    <div class="course-item__number">03</div>
+                    <h3>Оценка результатов</h3>
+                    <p>Как оценить свои результаты</p>
+                    <button class="btn btn--small btn--course">Подробнее</button>
+                </div>
+                <div class="course-item" data-course="Обучение">
+                    <div class="course-item__number">04</div>
+                    <h3>Обучение</h3>
+                    <p>Как научиться улучшать свои навыки</p>
+                    <button class="btn btn--small btn--course">Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+           
+
+            <!-- ОТЗЫВЫ -->
+            <section id="reviews" class="reviews">
+                <div class="container">
+                    <h2 class="section-title">Отзывы</h2>
+                    <div class="reviews__slider">
+                        <button class="slider__arrow slider__arrow--prev">←</button>
+                        <div class="reviews__grid">
+                            <div class="review-card review-card--active">
+                                <div class="review-card__header">
+                                    <h4>Александр Дмитриев</h4>
+                                </div>
+                                <p class="review-card__text">«Я хотел бы знать больше о ритме и его влиянии на здоровье. Это был интересный курс, который помог мне понять, как правильно управлять ритмом. Я рекомендую этот курс всем, кто хочет улучшить свою жизнь.»</p>
+                                <a href="#" class="review-card__link">Читать полностью</a>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <h4>Юрий Петров</h4>
+                                </div>
+                                <p class="review-card__text">«Это курс, который я прошел в рамках курса RitmStyle. Я был очень рад, что смогу научиться управлять ритмом. Этот курс действительно помог мне сделать это.»</p>
+                                <a href="#" class="review-card__link">Читать полностью</a>
+                            </div>
+                            <div class="review-card">
+                                <div class="review-card__header">
+                                    <h4>Елена Соколова</h4>
+                                </div>
+                                <p class="review-card__text">«RitmStyle изменил моё представление о водных процедурах. Очень расслабляет и восстанавливает силы. Рекомендую всем, кто хочет снять стресс.»</p>
+                                <a href="#" class="review-card__link">Читать полностью</a>
+                            </div>
+                        </div>
+                        <button class="slider__arrow slider__arrow--next">→</button>
+                    </div>
+                    <div class="slider__dots">
+                        <span class="dot dot--active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- О RITMSTYLE -->
+            <section id="about" class="about">
+                <div class="container">
+                    <h2 class="section-title">О RitmStyle</h2>
+                    <div class="about__grid">
+                        <div class="about__item">
+                            <div class="about__content">
+                                <h3>RitmStyle массаж</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget massa. Curabitur venenatis nunc id orci porta sodales. Sed euismod nibh at sapien ullamcorper malesuada. Praesent ac libero ut aliquet dignissim. Nulla facilisi. Etiam nec ultricies ligula. Nam quis lacus non ante hendrerit ultrices. Nullam euismod mauris vitae tempor. Fusce et risus velit. Maecenas a arcu egestas, consequat turpis a, eleifend eros. Ut rhoncus lectus sit amet semper.</p>
+                            </div>
+                            <div class="about__image">
+                                <img src="images/about-1.jpg" alt="RitmStyle массаж">
+                            </div>
+                        </div>
+                        <div class="about__item about__item--reverse">
+                            <div class="about__image">
+                                <img src="images/about-2.jpg" alt="RitmStyle гидротерапия">
+                            </div>
+                            <div class="about__content">
+                                <h3>RitmStyle гидротерапия</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat lorem, interdum euismod id, vestibulum neque. Morbi tristique enim id est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer bibendum nulla ac magna. Suspendisse potenti. Aliquam erat volutpat. Mauris blandit mi id odio tincidunt, euismod accumsan tortor ultricies. Proin fermentum leo id diam lobortis, euismod sagittis justo ultricies. Phasellus eget metus sit amet augue congue pharetra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- СТОИМОСТЬ -->
+            <section id="prices" class="prices">
+                <div class="container">
+                    <h2 class="section-title">Стоимость сеансов</h2>
+                    <div class="prices__content">
+                        <div class="prices__list">
+                            <div class="price-item">
+                                <span class="price-item__name">Ворлдскиллс (взрослые)</span>
+                                <span class="price-item__value">1000 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-item__name">Абонемент на RitmStyle</span>
+                                <span class="price-item__value">5000 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-item__name">Ворлдскиллс для пар</span>
+                                <span class="price-item__value">6000 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-item__name">Ворлдскиллс для беременных</span>
+                                <span class="price-item__value">7500 руб.</span>
+                            </div>
+                            <div class="price-item">
+                                <span class="price-item__name">Ворлдскиллс + фотосессия</span>
+                                <span class="price-item__value">15000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="prices__gift">
+                            <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+                                <rect x="20" y="30" width="60" height="40" stroke="#018ABE" stroke-width="2"/>
+                                <path d="M30 30 L40 15 L60 15 L70 30" stroke="#018ABE" stroke-width="2" fill="none"/>
+                                <line x1="50" y1="30" x2="50" y2="70" stroke="#018ABE" stroke-width="2"/>
+                            </svg>
+                            <p>Подарочные сертификаты</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ПОДРОБНЕЕ О РИТМЕ -->
+            <section class="details">
+                <div class="container">
+                    <h2 class="section-title">Подробнее о ритме</h2>
+                    <div class="details__grid">
+                        <div class="detail-block">
+                            <h3>Барселона WorkClass</h3>
+                            <ul class="detail-list">
+                                <li><span>Инновации:</span> №1</li>
+                                <li><span>Создание:</span> №2</li>
+                                <li><span>Защита:</span> №3</li>
+                            </ul>
+                        </div>
+                        <div class="detail-block">
+                            <h3>Барселона "На Городском"</h3>
+                            <ul class="detail-list">
+                                <li><span>Закрытие:</span> №1</li>
+                                <li><span>Креативный состав:</span> №2</li>
+                                <li><span>Защита от дезинфекции:</span> №3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- КОНТАКТЫ -->
+            <section id="contacts" class="contacts">
+                <div class="container">
+                    <div class="contacts__grid">
+                        <div class="contact-card">
+                            <h3>Бассейн WorkClass</h3>
+                            <p><span>📍</span> Невский 140</p>
+                            <p><span>🚇</span> м. Спасская</p>
+                            <p><span>📅</span> Запись по договоренности</p>
+                            <button class="btn btn--outline">Записаться</button>
+                        </div>
+                        <div class="contact-card">
+                            <h3>Бассейн "На Городском"</h3>
+                            <p><span>📍</span> ул. Большая Конюшенная, 19</p>
+                            <p><span>🚇</span> м. Невский проспект</p>
+                            <p><span>📅</span> Запись по договоренности</p>
+                            <button class="btn btn--outline">Записаться</button>
+                        </div>
+                        <div class="contacts__form">
+                            <h3>Записаться на сеанс</h3>
+                            <form id="contactForm">
+                                <input type="text" placeholder="Имя" required>
+                                <input type="tel" placeholder="Телефон" required>
+                                <input type="email" placeholder="Email">
+                                <select>
+                                    <option>Выберите сеанс</option>
+                                    <option>RitmStyle для пар</option>
+                                    <option>RitmStyle с фотосессией</option>
+                                    <option>Стандартный RitmStyle</option>
+                                    <option>Курс Иванов</option>
+                                </select>
+                                <button type="submit" class="btn btn--primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ПОДВАЛ -->
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__col">
+                    <p>© 2024 RitmStyle. Все права защищены.</p>
+                </div>
+                <div class="footer__col">
+                    <a href="#" class="footer__policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <h2>Запись на сеанс</h2>
+            <form id="modalForm">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="Ваш телефон" required>
+                <input type="email" placeholder="Ваш email">
+                <select required>
+                    <option>Выберите сеанс</option>
+                    <option>RitmStyle для пар</option>
+                    <option>RitmStyle с фотосессией</option>
+                    <option>Стандартный RitmStyle</option>
+                    <option>Курс Иванов</option>
+                </select>
+                <button type="submit" class="btn btn--primary">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
